@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+}
+
+main{
+    background-color: grey;
+    display: grid;
+    grid-template-rows: 25% 75%;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 
+        "header header"
+        "panel-izquierda principal";
+    /* width: 100vw; */
+    height: 100vh;
+}
+
+header{
+    background-color: grey;
+    grid-area: header;
+}
+
+#panel-izquierda{
+    background-color: grey;
+    grid-area: panel-izquierda;
+}
+
+#principal{
+    background-color: grey;
+    grid-area: principal;
+}
+
+@media (max-width: 600px){
+    h1{
+        font-family: monospace;
+    }
+}
+
+@media (min-width: 600px){
+    h1, h3{
+        color: #4242AA;
+    }
+}

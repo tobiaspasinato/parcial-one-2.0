@@ -1,0 +1,23 @@
+{
+    "city": "avellaneda",
+    "temperature": "25 ºC",
+    "wind": "5 km/h",
+    "description": "Cloudy",
+    "forecast": [
+        {   
+            "day": "1",
+            "temperature": "-5 ºC",
+            "wind": "9 km/h"
+        },
+        {
+            "day": "2",
+            "temperature": "0 ºC",
+            "wind": "9 km/h"
+        },
+        {
+            "day": "3",
+            "temperature": "14 ºC",
+            "wind": "11 km/h"
+        }
+    ]
+}
