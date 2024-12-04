@@ -1,11 +1,17 @@
-body {
-    background-color: black;
+body{
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: monospace;
 }
 
 main{
     background-color: grey;
     display: grid;
-    grid-template-rows: 25% 75%;
+    grid-template-rows: 14% 86%;
     grid-template-columns: 20% 80%;
     grid-template-areas: 
         "header header"
@@ -17,16 +23,58 @@ main{
 header{
     background-color: grey;
     grid-area: header;
+    text-align: center;
+    padding: 10px;
 }
 
 #panel-izquierda{
     background-color: grey;
     grid-area: panel-izquierda;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #principal{
     background-color: grey;
     grid-area: principal;
+}
+
+/* Bootstrap */
+
+.clima-card, .forecast {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.clima-card img {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+button {
+    background-color: #00d0ff;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0685e7;
+}
+
+input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
 }
 
 @media (max-width: 600px){
