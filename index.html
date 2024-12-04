@@ -26,16 +26,21 @@
                 <div id="clima">
                     <!-- Aquí se debe mostrar el clima de Avellaneda -->
                 </div>
+                <button onclick="descargarPDF()">PDF</button>
                 <hr />
                 <input type="text" id="traer-ciudad" />
+                <div id="mensajeError"></div>
                 <div id="busqueda">
                     <button id="buscar">Buscar</button>
                     <!-- Aquí se muestra el clima resultado de la búsqueda -->
                 </div>
+                <div id="ultimoLocalStorage" class="clima-card"></div>
             </section>
         </main>
         <script src="pronostico.js"></script>
         <script src="clima.js"></script>
         <script src="main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
     </body>
 </html>
